@@ -5,5 +5,4 @@ yum upgrade glib2
 yum install -y firefox
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
-cd wechat-spider
 pip install -r requirements.txt
