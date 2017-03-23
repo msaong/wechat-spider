@@ -165,6 +165,10 @@ $ python bin/processor.py
 ```
 
 以上步骤执行成功，并能爬取文章后。可以参考以下部分配置生产环境。
+# 生产机部署
+修改local_settings.py，关闭debug，设置秘钥
+秘钥可通过下面网站生成（网站网上搜索得到，是否有病毒未知，安全性未知，懒人可学习）
+http://www.miniwebtool.com/django-secret-key-generator/
 
 # 部署nginx
 前期先用nginx将域名www.mydomain.com转发到8001端口。
