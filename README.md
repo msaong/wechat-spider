@@ -170,6 +170,17 @@ $ python bin/processor.py
 秘钥可通过下面网站生成（网站网上搜索得到，是否有病毒未知，安全性未知，懒人可学习）
 http://www.miniwebtool.com/django-secret-key-generator/
 
+# 安装geckodriver
+
+切换生产环境后，可能会报错缺少geckodriver
+wget https://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodriver-v0.15.0-linux64.tar.gz
+tar -zxvf geckodriver-v0.15.0-linux64.tar.gz
+mv geckodriver /usr/bin/
+chown root:root /usr/bin/geckodriver
+
+检查是否安装成功
+geckodriver -h
+
 # 部署nginx
 前期先用nginx将域名www.mydomain.com转发到8001端口。
 
