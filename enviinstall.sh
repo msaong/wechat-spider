@@ -6,3 +6,4 @@ yum install -y firefox
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 pip install -r requirements.txt
+pip install -U selenium
